@@ -1,14 +1,12 @@
 import streamlit as st
 
-st.title("🌡️ Fahrenheit to Celsius Converter")
+st.header("Circle Area Calculator")
 
-st.write("This application will convert temperature from Fahrenheit to Celsius.")
+radius = st.number_input("Enter radius:", min_value=0.0)
 
-fahrenheit = st.number_input(
-    "Enter the temperature in Fahrenheit:",
-    value=32.0
-)
+if st.button("Calculate Area"):
+    pi = 3.14
+    area = pi * radius * radius
 
-celsius = (fahrenheit - 32) * 5 / 9
-
-st.success(f"Temperature in Celsius is: {celsius:.3f} °C")
+    st.write("Area of your circle is:", area)
+    st.write("Area of your circle is: %.5f" % area)
