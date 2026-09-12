@@ -2,10 +2,10 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Character Counter",
-    page_icon="🔤"
+    page_icon=""
 )
 
-st.title("🔤 Character Counter")
+st.title("Character Counter")
 st.write("Find how many times a specific character appears in a sentence.")
 
 sentence = st.text_area("📝 Enter your sentence:")
